@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js-oevelse-1</title>
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        .box {
+            display: inline-block;
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            transition: all 1s;
+        }
+
+        .skift1 {
+            background-color: green;
+        }
+
+        .skift2 {
+            background-color: black;
+        }
+
+        .skift3 {
+            background-color: red;
+        }
+
+        .skift4 {
+            background-color: azure;
+        }
+
+
+        /*********************/
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+    <script>
+        const BOX1 = document.querySelector("#box1");
+        const BOX2 = document.querySelector("#box2");
+        const BOX3 = document.querySelector("#box3");
+        const BOX4 = document.querySelector("#box4");
+
+        BOX1.addEventListener("click", skift1);
+
+        function skift1() {
+            BOX1.style.backgroundColor = "pink";
+            BOX1.style.transition = "all 3s";
+        }
+
+        BOX2.addEventListener("click", skift2);
+
+        function skift2() {
+            BOX2.style.backgroundColor = "green";
+            BOX2.style.boxSizing = "10 px 10 px";
+        }
+
+        BOX3.addEventListener("click", skift3);
+
+        function skift3() {
+            BOX3.style.backgroundColor = "violet";
+            BOX3.style.boxSizing = "40 px 40 px";
+            BOX3.style.transition = "all 1s";
+        }
+
+        BOX3.addEventListener("click", skift3);
+
+        function skift4() {
+            BOX4.style.backgroundColor = "violet";
+            BOX4.style.boxSizing = "40 px 40 px";
+            BOX4.style.transition = "all 1s";
+        }
+    </script>
+</body>
+
+</html>
